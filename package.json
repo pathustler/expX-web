@@ -1,0 +1,20 @@
+{
+  "name": "expx-web",
+  "version": "1.0.0",
+  "description": "ExpX is a mobile application designed to help users improve their skills on various subjects. The app works by allowing users to browse and download skills that have been posted in the skill store by other users. Users can then track their progress as they work to master these skills, and earn badges as they make progress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathustler/expX-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pathustler/expX-web/issues"
+  },
+  "homepage": "https://github.com/pathustler/expX-web#readme"
+}
