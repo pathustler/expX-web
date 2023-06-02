@@ -1,0 +1,67 @@
+[
+    {
+        "skillId": "12345",
+        "icon": "skill_icon.png",
+        "title": "Skill Title 1",
+        "builder": "John Doe",
+        "tags": [
+            "tag1",
+            "tag2",
+            "tag3"
+        ],
+        "duration": "2 weeks",
+        "currentDay": 7,
+        "masteryDate": "2023-06-10"
+    },
+    {
+        "skillId": "67890",
+        "icon": "skill_icon2.png",
+        "title": "Skill Title 2",
+        "builder": "Jane Smith",
+        "tags": [
+            "tag4",
+            "tag5"
+        ],
+        "duration": "1 month",
+        "currentDay": 14,
+        "masteryDate": "2023-06-17"
+    },
+    {
+        "skillId": "13579",
+        "icon": "skill_icon3.png",
+        "title": "Skill Title 3",
+        "builder": "Alice Johnson",
+        "tags": [
+            "tag1",
+            "tag6"
+        ],
+        "duration": "3 weeks",
+        "currentDay": 21,
+        "masteryDate": "2023-06-24"
+    },
+    {
+        "skillId": "24680",
+        "icon": "skill_icon4.png",
+        "title": "Skill Title 4",
+        "builder": "Bob Williams",
+        "tags": [
+            "tag7"
+        ],
+        "duration": "2 months",
+        "currentDay": 30,
+        "masteryDate": "2023-07-02"
+    },
+    {
+        "skillId": "98765",
+        "icon": "skill_icon5.png",
+        "title": "Skill Title 5",
+        "builder": "Emily Davis",
+        "tags": [
+            "tag2",
+            "tag8"
+        ],
+        "duration": "1.5 months",
+        "currentDay": 45,
+        "masteryDate": "2023-07-15"
+    }
+]
