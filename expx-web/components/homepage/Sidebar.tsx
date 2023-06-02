@@ -43,7 +43,7 @@ export default function Sidebar() {
                         ))
                     }
                     <div className='calendar-item'>
-                        <CalendarIcon className="calendar-icon" />
+                        
                     </div>
                     <div className='search-item'>
 
