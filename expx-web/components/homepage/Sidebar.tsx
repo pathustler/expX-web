@@ -8,7 +8,14 @@ export default function Sidebar() {
     var thumbnails:string[] = [
         'https://static.vecteezy.com/system/resources/previews/006/945/737/non_2x/simple-karate-logo-vector.jpg',
         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png',
-        'https://png.pngtree.com/png-vector/20190316/ourmid/pngtree-movie-projector-icon-set-of-great-flat-icons-with-style-long-s-png-image_848559.jpg'
+        'https://assets.hongkiat.com/uploads/kitchen-cooking-icon-sets/cooking-stuff-icon.jpg',
+        'https://t3.ftcdn.net/jpg/04/79/81/76/360_F_479817672_BpTyGX9qAl3rs9mHqvQUsyWXTJrkLUII.jpg'
+    ]
+    var names:string[] = [
+        'Karate for noobs',
+        'Photoshop in 400 days',
+        'Cooking Tutorial to offend ppl',
+        'Music for the deaf'
     ]
 
     const [active, setActive] = useState(0);
