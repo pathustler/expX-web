@@ -4,9 +4,12 @@ export default function Home() {
   return (
    <>
    <div className="flex flex-row items-center w-full h-screen">
-      <div className="w-auto bg-white h-full border-r-2 border-color-default">
-          <div className="m-auto">
-            <Sidebar/>
+      <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar">
+         <Sidebar/>
+          
+            
+            <div>
+              mode
             </div>
       </div>
       <div className="w-full bg-main flex flex-column items-center overflow-y-scroll border-r-2 border-color-default h-full ">

@@ -9,6 +9,52 @@
   background-color: #f8f9f9;
 }
 
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 4.3rem;
+  height: 4.3rem;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+.logo{
+  width: 4.3rem;
+  height: 4.3rem;
+  text-align: center;
+}
+
+.bottombar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1.5rem;
+}
+.topsidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 3.75rem;
+
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.75rem 1.75rem 1.75rem;
+  gap: 32px;
+}
 .w-027{
   width: 33%;
 }
