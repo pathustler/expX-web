@@ -8,16 +8,19 @@
 .bg-main{
   background-color: #f8f9f9;
 }
-
+.active {
+  border: 2px solid #F1F1F1;
+}
 .skill-container {
+  
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px;
   gap: 10px;
 
-  width: 4.3rem;
-  height: 4.3rem;
+  width: 4.2rem;
+  height: 4.2rem;
 }
 
 .topbar {
@@ -27,8 +30,8 @@
   padding: 0px;
 }
 .logo{
-  width: 4.3rem;
-  height: 4.3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   text-align: center;
 }
 
@@ -37,14 +40,15 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 .topsidebar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+
   padding: 0px;
-  gap: 3.75rem;
+  gap: 3.25rem;
 
 }
 .sidebar {
@@ -52,7 +56,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1.75rem 1.75rem 1.75rem;
+  padding: 1.3rem 1.3rem 1.3rem 1.3rem;
   gap: 32px;
 }
 .w-027{

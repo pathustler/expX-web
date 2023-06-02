@@ -1,17 +1,22 @@
+"use client";
+import { useState } from "react";
 import Logo from '../../public/images/logo.svg'
-import { CalendarIcon } from '@heroicons/react/outline';
+
+
 
 export default function Sidebar() {
     var thumbnails:string[] = [
         'https://static.vecteezy.com/system/resources/previews/006/945/737/non_2x/simple-karate-logo-vector.jpg',
         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png',
-
+        'https://png.pngtree.com/png-vector/20190316/ourmid/pngtree-movie-projector-icon-set-of-great-flat-icons-with-style-long-s-png-image_848559.jpg'
     ]
+
+    const [active, setActive] = useState(0);
     return (
         <>
             <div className="topsidebar">
                 <div className="topbar">
-                    <div className="flex flex-row items-center logo">
+                    <button className="flex flex-row items-center logo">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -32,22 +37,22 @@ export default function Sidebar() {
                         417 -174 240 -293 567 -293 812 0 107 5 103 -131 103 l-119 0 6 -87z"/>
                         </g>
                         </svg>
-                    </div>
+                    </button>
                 </div>
                 <div className='bottombar'>
                     {
                         thumbnails.map((item, index) => (
-                            <div className='skill-container' key={index}>
-                                <img style={{width:"3.12rem", height:"3.12rem"}}src={item}></img>
-                            </div>
+                            <button onClick={()=>{setActive(index)}} className={active===index? "active skill-container": "skill-container"} style={{borderRadius:"16px"}} key={index}>
+                                <img style={{width:"43px", height:"43px", objectFit:"cover", borderRadius:"16px"}}src={item}></img>
+                            </button>
                         ))
                     }
-                    <div className='calendar-item'>
+                    <button className='calendar-item'>
                         
-                    </div>
-                    <div className='search-item'>
+                    </button>
+                    <button className='search-item'>
 
-                    </div>
+                    </button>
                 </div>
             </div>
            
