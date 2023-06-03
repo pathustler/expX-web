@@ -1,19 +1,22 @@
+"use client";
 import Sidebar from "@/components/homepage/Sidebar"
 import SkillStats from "@/components/homepage/SkillStats"
+import ThemeMode from "@/components/homepage/ThemeMode"
+import React, { useState } from 'react';
 
 export default function Home() {
   return (
-   <>
-   <div className="flex flex-row items-center w-full h-screen">
-      <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar">
-         <Sidebar/>
-          
-            
-            <div>
-              mode
-            </div>
-      </div>
-      <div className="w-full bg-main flex flex-column items-center overflow-y-scroll border-r-2 border-color-default h-full ">
+    <>
+      <div className="flex flex-row items-center w-full h-screen">
+        <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar">
+          <Sidebar />
+
+
+          <div>
+            <ThemeMode />
+          </div>
+        </div>
+        <div className="w-full bg-main flex flex-column items-center overflow-y-scroll border-r-2 border-color-default h-full ">
           <div className="m-auto">
             <h1 className="text-4xl">MAIN</h1>
           </div>
@@ -26,7 +29,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <SkillStats skillId="13579"/>
+          <SkillStats skillId="13579" />
         </div>
       </div>
     </>

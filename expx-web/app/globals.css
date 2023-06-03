@@ -77,3 +77,41 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Revan's Custom TailwindCSS */
+
+.bg-gray-self-900 {
+	background-color: #2a2a2e;
+}
+
+.bg-gray-self-800 {
+	background-color: #4d4d4f;
+}
+
+.bg-gray-self-700 {
+	background-color: #707072;
+}
+
+.bg-gray-self-600 {
+	background-color: #979797;
+}
+
+.bg-silver-self-400 {
+	background-color: #bebebe;
+}
+
+.bg-silver-self-300 {
+	background-color: #d6d6d6;
+}
+
+.bg-silver-self-200 {
+	background-color: #ededed;
+}
+
+.border-gray-self-900 {
+	border: 2px solid #2a2a2e;
+}
+
+.border-silver-self-300 {
+	border: 2px solid #bebebe;
+}
