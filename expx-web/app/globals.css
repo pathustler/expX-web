@@ -1,7 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
 
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
 .border-color-default { 
   border-color: #EFEFEF;
 }
@@ -220,4 +233,145 @@ body {
 
 .border-silver-self-300 {
 	border: 2px solid #bebebe;
+}
+
+
+.daycontainer {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 40px 30px;
+justify-content: space-between;
+width: 60%;
+height: 100px;
+border-radius: 30px;
+cursor: pointer;
+}
+
+.normalhover{
+  background-color: #ffffff;
+  border: 2px solid #E8E8E8
+}
+.activehover{
+  background-color: #1E465C;
+  border: 2px solid #E8E8E8
+}
+.activehover:hover{
+  background-color: #193c4f;
+}
+
+.normalhover:hover{
+  background-color: #fAfAfA;
+}
+
+.leftdaycont{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+justify-content: start;
+width: auto;
+
+}
+
+.rightdaycont {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+justify-content: center;
+
+width: 46px;
+}
+
+.day{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  height: 28px;
+}
+
+.daytitle {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 28px;
+}
+
+.duration {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+
+}
+
+.iconday{
+  width: 16px;
+height: 16px;
+
+background: #AFB0B0;
+}
+
+
+.grayday {
+  color: rgba(71, 71, 71, 0.3);
+}
+.graytitle {
+  color: rgba(71, 71, 71, 0.3);
+}
+.grayduration {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.activeday {
+  color: #FFFFFF;
+}
+.activetitle {
+  color: rgba(255, 255, 255, 0.3);
+}
+.activeduration {
+  color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+.normalday {
+  color: 1B424D;
+}
+.normaltitle {
+  color: rgba(71, 71, 71, 0.3);
+}
+.normalduration {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.resthover{
+  background: #6AC9FF;
+}
+.resthover:hover{
+  background: #62baed;
+}
+.restday {
+  color: rgba(27, 66, 77, 0.8);
+
+
+}
+.resttitle {
+  color: rgba(0, 0, 0, 0.3);
+}
+.restduration {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.practicehover {
+  background-color: #0C5D8B;
+}
+.practicehover:hover{
+  background-color: #0a547e;
 }
