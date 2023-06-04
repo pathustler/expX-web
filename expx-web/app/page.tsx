@@ -2,6 +2,7 @@
 import Sidebar from "@/components/homepage/Sidebar"
 import SkillStats from "@/components/homepage/SkillStats"
 import ThemeMode from "@/components/homepage/ThemeMode"
+import UserStats from "@/components/homepage/UserStats"
 import React, { useState } from 'react';
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
 
 
           <div>
-            <ThemeMode/>
+            <ThemeMode />
           </div>
         </div>
         <div className="w-full bg-main flex flex-column items-center overflow-y-scroll border-r-2 border-color-default h-full ">
@@ -22,12 +23,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col w-027 gap-y-0.5 skill-info-gap bg-white  h-full">
-          <div className="bg-gray-100 h-14p content-center flex flex-col text-center w-full">
-            <div className="m-auto">
-              <div className="m-auto">
-                <h1 className="text-lg">MAIN STATS</h1>
-              </div>
-            </div>
+          <div className="bg-white h-14p content-center flex flex-col text-center w-full">
+            <UserStats />
           </div>
           <SkillStats skillId="13579" />
         </div>
