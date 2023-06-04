@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon } from '@heroicons/react/outline';
-
+import { faBolt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../app/stats.css'
 const UserStats = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -13,27 +15,27 @@ const UserStats = () => {
     };
 
     return (
-        <div className="m-auto flex items-center space-x-2 my-2">
-            <div className="flex items-center">
-                <div className="flex items-center space-x-1">
-                    <div className="flex items-center space-x-1">
+        <div className="userstatcontainer w-full right-0 top-0">
+            <div className="flex items-center flex-row gap-10 ">
+                <div className="flex flex-row items-center gap-10">
+                    <button className="flex items-center space-x-2">
                         <img
                             src="https://media.discordapp.net/attachments/1100745859664191558/1110881341538582619/SOLIDUS.png?width=507&height=473"
                             alt="Solidus"
                             className="w-6 h-6"
                         />
-                        <span className="text-sm font-bold text-gray-700">2103</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                        <LightningBoltIcon className="w-5 h-5 text-yellow-500 border-none" />
-                        <span className="text-sm font-bold text-gray-700">4</span>
-                    </div>
+                        <span className="solidustext">2103</span>
+                    </button>
+                    <button className="flex items-center space-x-2">
+                        <FontAwesomeIcon icon={faBolt} className='h-5' style={{color: "#ffdb4c"}} />
+                        <span className="streaktext">4</span>
+                    </button>
                 </div>
-                <button className="flex items-center justify-center w-9 h-9 rounded-full ml-5" onClick={toggleDropdown}>
+                <button className="profile" onClick={toggleDropdown}>
                     <img
-                        src="https://images-ext-2.discordapp.net/external/DIFSNofJMpvwlIy8ho906dM-uDWwv8Q5BDuHvioAUmk/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1018595819416469624/058a438fcb880feccc43a2b27a6d789a.png?width=473&height=473"
+                        src="https://cdn.discordapp.com/attachments/1100745859664191558/1114862411086839848/Screenshot_2023-06-04_at_6.24.12_AM.png"
                         alt="Clickable Icon"
-                        className="w-9 h-9 rounded-full"
+                        className="w-full h-full rounded-full"
                     />
                 </button>
                 {isDropdownOpen && (

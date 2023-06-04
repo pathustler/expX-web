@@ -1,0 +1,49 @@
+.userstatcontainer{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-top: 43px ;
+right: 0;
+gap: 10px;
+top: 0;
+float: right;
+flex-direction: column-reverse;
+
+}
+
+.innercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 33px;
+}
+
+.profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 1000px;
+    border: 3px solid #E3E3E3;
+}
+
+.streaktext{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 140% */
+color: #FFDB4C;
+
+}
+
+.solidustext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #388BA6;
+}

@@ -15,6 +15,11 @@
     }
   }
 }
+
+.w-rightside {
+  width: 30rem;
+}
+
 .border-color-default { 
   border-color: #EFEFEF;
 }
