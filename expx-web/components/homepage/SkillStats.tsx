@@ -26,39 +26,65 @@ const SkillStats: React.FC<SkillStatsProps> = ({ skillId }) => {
     return <div>No data found for skill ID: {skillId}</div>;
   }
 
-  const tagColors = ["bg-blue-500", "bg-green-500", "bg-red-500", "bg-yellow-500"];
+  const tagColors = ["bg-premium", "bg-verified", "bg-normal",];
 
   return (
-    <div className="p-4 pl-14 border-2 border-gray-300 rounded">
-      <div className="flex items-center mb-4">
-        <div className="flex items-center justify-center">
-          <div className="w-12 h-12 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center">
-            <img src={skill.icon} alt="Skill Icon" className="w-8 h-8" />
+    <div className="skillstatcontainer">
+
+
+    <div>
+      <div className="imagediv">
+            <img src={skill.icon} alt="Skill Icon" className=" imageicon" />
+        </div>
+    </div>
+
+
+    <div className="contentcontainer">
+      <div className="contentinner">
+      <div>
+        <div className="flex items-center mb-4">
+          <div>
+            <h2 className="mainskilltitle">{skill.title}</h2>
+            <p className="devname">By {skill.builder}</p>
           </div>
         </div>
-        <div className="ml-4">
-          <h2 className="text-xl font-semibold mb-2">{skill.title}</h2>
-          <p className="text-gray-600 mb-2">By {skill.builder}</p>
+        <div className="flex flex-wrap mb-2">
+          {skill.tags.map((tag, index) => (
+            <div
+              key={index}
+              className={`rounded-full px-2 py-1 mr-2 mb-2 text-xs text-white ${tagColors[index % tagColors.length]}`}
+            >
+              {tag.toUpperCase()}
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex flex-wrap mb-2">
-        {skill.tags.map((tag, index) => (
-          <div
-            key={index}
-            className={`rounded-full px-2 py-1 mr-2 mb-2 text-sm text-white ${tagColors[index % tagColors.length]}`}
-          >
-            {tag.toUpperCase()}
-          </div>
-        ))}
+
+
+      <div>
+      <h3 className="subtitles">Course Duration</h3>
+      <p className="content">{skill.duration}</p>
       </div>
-      <h3 className="text-lg font-semibold mb-1">Course Duration</h3>
-      <p className="text-gray-600 mb-2">{skill.duration}</p>
-      <h3 className="text-lg font-semibold mb-1">Current</h3>
-      <p className="text-gray-600 mb-2">Day {skill.currentDay}</p>
-      <h3 className="text-lg font-semibold mb-1">Expected Mastery Date</h3>
-      <p className="text-gray-600 mb-2">{skill.masteryDate}</p>
-      <h3 className="text-lg font-semibold mb-1">Mastery Reward</h3>
-      <p className="text-blue-500">{skill.masteryReward}</p>
+      <div>
+      <h3 className="subtitles">Current</h3>
+      <p className="content">Day {skill.currentDay}</p>
+      </div>
+      
+      <div>
+        <h3 className="subtitles">Expected Mastery Date</h3>
+        <p className="content">{skill.masteryDate}</p>
+      </div>
+      
+      <div>
+         <h3 className="subtitles">Mastery Reward</h3>
+         <span className="flex flex-row items-center gap-2">
+          <img className="w-5 h-5" src="https://cdn.discordapp.com/attachments/1100745859664191558/1110881341538582619/SOLIDUS.png"></img>
+          <p className="rewardcontent">{skill.masteryReward}</p>
+         </span>
+        
+      </div>
+      </div>
+    </div>
     </div>
   );
 };
