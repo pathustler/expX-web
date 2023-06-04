@@ -5,7 +5,7 @@ export default function DayNormal(day:any, title:any){
         <>
             <div className="daycontainer normalhover">
                 <div className="leftdaycont">
-                    <h1 className={"day normalday"}>Day 3</h1>
+                    <h1 className="day normalday">Day 3</h1>
                     <h2 className="daytitle normaltitle">Learn to Create Variables with data </h2>
                 </div>
                 <div className="rightdaycont">

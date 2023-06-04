@@ -10,6 +10,7 @@ import DayNormal from "@/components/homepage/DayNormal";
 import DayPractice from "@/components/homepage/DayPractice";
 import DayRest from "@/components/homepage/DayRest";
 
+
 export default function Home() {
   return (
     <>
