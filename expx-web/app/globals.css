@@ -259,7 +259,6 @@ cursor: pointer;
 }
 .activehover{
   background-color: #1E465C;
-  border: 2px solid #E8E8E8
 }
 .activehover:hover{
   background-color: #193c4f;

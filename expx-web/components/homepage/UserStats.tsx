@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon } from '@heroicons/react/outline';
+import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon, UserCircleIcon } from '@heroicons/react/outline';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../app/stats.css'
 const UserStats = () => {
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [isDropdownOpen, setDropdownOpen] = useState(true);
 
     const toggleDropdown = () => {
         setDropdownOpen(!isDropdownOpen);
@@ -17,7 +17,7 @@ const UserStats = () => {
     return (
         <div className="userstatcontainer w-full right-0 top-0">
             <div className="flex items-center flex-row gap-10 ">
-                <div className="flex flex-row items-center gap-10">
+                <div className="flex flex-row items-center gap-6">
                     <button className="flex items-center space-x-2">
                         <img
                             src="https://media.discordapp.net/attachments/1100745859664191558/1110881341538582619/SOLIDUS.png?width=507&height=473"
@@ -39,33 +39,35 @@ const UserStats = () => {
                     />
                 </button>
                 {isDropdownOpen && (
-                    <div className="absolute top-12 right-0 mt-1 mr-5 bg-white rounded-lg shadow-lg z-50">
-                        <div className="flex flex-col space-y-2 py-1">
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <HomeIcon className="w-4 h-4" />
-                                <span>Homepage</span>
+                    <div className="dropdowncont">
+                            <button className="menuitem">
+                                <HomeIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Homepage</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <UserIcon className="w-4 h-4" />
-                                <span>Profile</span>
+                            <button className="menuitem">
+                                <UserCircleIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Profile</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <CalendarIcon className="w-4 h-4" />
-                                <span>Calendar</span>
+                            <button className="menuitem">
+                                <CalendarIcon className="w-6 h-6 icon"/>
+                                <span className='menutext'>Calendar</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <DownloadIcon className="w-4 h-4" />
-                                <span>Skill Store</span>
+                            <button className="menuitem">
+                                <DownloadIcon className="w-6 h-6 icon"/>
+                                <span className='menutext'>Skill Store</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <ShoppingCartIcon className="w-4 h-4" />
-                                <span>Buy Solidus</span>
+                            <button className="menuitem">
+                                <ShoppingCartIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Buy Solidus</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-red-500 text-sm px-4 py-2 hover:bg-red-100 focus:outline-none focus:bg-red-200">
-                                <LogoutIcon className="w-4 h-4" />
-                                <span>Log out</span>
+                            <button className="menuitem">
+                                <CogIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Settings</span>
                             </button>
-                        </div>
+                            <button className="menuitem">
+                                <LogoutIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Log out</span>
+                            </button>
                     </div>
                 )}
             </div>
