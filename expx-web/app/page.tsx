@@ -4,11 +4,11 @@ import SkillStats from "@/components/homepage/SkillStats"
 import ThemeMode from "@/components/homepage/ThemeMode"
 import UserStats from "@/components/homepage/UserStats"
 import React, { useState } from 'react';
-import DayActive from "@/components/homepage/DayActive";
-import DayGray from "@/components/homepage/DayGray";
-import DayNormal from "@/components/homepage/DayNormal";
-import DayPractice from "@/components/homepage/DayPractice";
-import DayRest from "@/components/homepage/DayRest";
+import DayActive from "@/components/homepage/dayscomponents/DayActive";
+import DayGray from "@/components/homepage/dayscomponents/DayGray";
+import DayNormal from "@/components/homepage/dayscomponents/DayNormal";
+import DayPractice from "@/components/homepage/dayscomponents/DayPractice";
+import DayRest from "@/components/homepage/dayscomponents/DayRest";
 
 export default function Home() {
   return (
