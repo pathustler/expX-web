@@ -4,7 +4,7 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../app/stats.css'
 const UserStats = () => {
-    const [isDropdownOpen, setDropdownOpen] = useState(true);
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
         setDropdownOpen(!isDropdownOpen);
