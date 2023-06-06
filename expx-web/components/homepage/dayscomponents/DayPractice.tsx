@@ -6,7 +6,7 @@ export default function DayPractice(day:any, title:any){
             <div className="daycontainer practicehover">
                 <div className="leftdaycont">
                     <h1 className={"day activeday"}>Day 7</h1>
-                    <h2 className="daytitle activetitle">Learn to Create Variables with data </h2>
+                    <h2 className="daytitle activetitle sm:hidden md:hidden lg:block">Learn to Create Variables with data </h2>
                 </div>
                 <div className="rightdaycont">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255, 255, 255, 0.3)"  className="w-6 h-6">

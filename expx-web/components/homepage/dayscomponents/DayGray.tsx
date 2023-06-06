@@ -6,7 +6,7 @@ export default function DayGray(day:any, title:any){
             <div className="daycontainer" style={{backgroundColor: "#E8E8E8",border: "2px solid #E8E8E8"}}>
                 <div className="leftdaycont">
                     <h1 className={"day grayday"}>Day 1</h1>
-                    <h2 className="daytitle graytitle">Learn to Create Variables with data </h2>
+                    <h2 className="daytitle graytitle sm:hidden md:hidden lg:block">Learn to Create Variables with data </h2>
                 </div>
                 <div className="rightdaycont">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#afb0b0" className="w-7 h-7">

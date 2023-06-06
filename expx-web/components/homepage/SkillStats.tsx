@@ -1,6 +1,6 @@
 import React from "react";
 import skillsData from "./skillStats.json";
-
+import './/skillstats.css'
 interface Skill {
   skillId: string;
   icon: string;
@@ -65,13 +65,9 @@ const SkillStats: React.FC<SkillStatsProps> = ({ skillId }) => {
       <h3 className="subtitles">Course Duration</h3>
       <p className="content">{skill.duration}</p>
       </div>
-      <div>
-      <h3 className="subtitles">Current</h3>
-      <p className="content">Day {skill.currentDay}</p>
-      </div>
       
-      <div>
-        <h3 className="subtitles">Expected Mastery Date</h3>
+      <div className=" sm:hidden md:hidden lg:block">
+        <h3 className="subtitles ">Expected Mastery Date</h3>
         <p className="content">{skill.masteryDate}</p>
       </div>
       
