@@ -34,7 +34,7 @@ const SkillStats: React.FC<SkillStatsProps> = ({ skillId }) => {
 
     <div>
       <div className="imagediv">
-            <img src={skill.icon} alt="Skill Icon" className=" imageicon" />
+            <img src={skill.icon} alt="Skill Icon" className="imageicon" />
         </div>
     </div>
 

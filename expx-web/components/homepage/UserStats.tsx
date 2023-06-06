@@ -13,7 +13,7 @@ const UserStats = () => {
     };
 
     return (
-        <div className="m-auto flex items-center space-x-2 my-2">
+        <div className="m-auto flex items-center mt-5 space-x-2 my-2">
             <div className="flex items-center">
                 <div className="flex items-center space-x-1">
                     <div className="flex items-center space-x-1">

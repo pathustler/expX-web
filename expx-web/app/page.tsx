@@ -17,8 +17,7 @@ export default function Home() {
       <div className="flex flex-row items-center w-full h-screen">
         <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar">
           <Sidebar />
-
-
+          
           <div>
             <ThemeMode />
           </div>
