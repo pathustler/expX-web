@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon, UserCircleIcon } from '@heroicons/react/outline';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,6 +15,20 @@ const UserStats = (props:any, activeIndex:any) => {
         setDropdownOpen(false);
     };
     const active = props.activeIndex
+    
+    
+    //CLICK MENU FUNC
+
+    useEffect(() => {
+        initCustomScripts();
+     }, [])
+    
+     const initCustomScripts = () => {
+      document.querySelector('body')?.addEventListener('click', function(){
+            
+            setDropdownOpen(false)
+      })
+    }
 
 
     return (
