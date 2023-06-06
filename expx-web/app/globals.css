@@ -98,7 +98,7 @@ body{
 .bg-main{
   background-color: #f8f9f9;
 }
-.active {
+.activesidebaritem {
   border: 2px solid #F1F1F1;
 }
 .skill-container {

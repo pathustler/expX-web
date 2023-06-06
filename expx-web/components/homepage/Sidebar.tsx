@@ -51,7 +51,7 @@ export default function Sidebar() {
                 <div className='bottombar'>
                     {
                         thumbnails.map((item, index) => (
-                            <button onClick={() => { setActive(index) }} className={active === index ? "active skill-container" : "skill-container"} style={{ borderRadius: "16px" }} key={index}>
+                            <button onClick={() => { setActive(index) }} className={active === index ? "activesidebaritem skill-container" : "skill-container"} style={{ borderRadius: "16px" }} key={index}>
                                 <img style={{ width: "43px", height: "43px", objectFit: "cover", borderRadius: "16px" }} src={item}></img>
                             </button>
                         ))

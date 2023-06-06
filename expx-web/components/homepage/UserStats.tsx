@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon, UserCircleIcon } from '@heroicons/react/outline';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../../app/stats.css'
+import '../../static/css/stats.css'
 const UserStats = (props:any, activeIndex:any) => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
