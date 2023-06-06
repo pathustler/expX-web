@@ -10,7 +10,6 @@ import DayNormal from "@/components/homepage/DayNormal";
 import DayPractice from "@/components/homepage/DayPractice";
 import DayRest from "@/components/homepage/DayRest";
 
-
 export default function Home() {
   return (
     <>
@@ -41,7 +40,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-027 gap-y-0.5 skill-info-gap bg-white  h-full">
+        <div className="flex flex-col w-rightside gap-y-0.5 skill-info-gap bg-white  h-full">
           <div className="bg-white h-14p content-center flex flex-col text-center w-full">
             <UserStats />
           </div>

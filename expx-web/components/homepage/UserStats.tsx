@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon } from '@heroicons/react/outline';
-
+import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, ShoppingCartIcon, CogIcon, LogoutIcon, UserCircleIcon } from '@heroicons/react/outline';
+import { faBolt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../app/stats.css'
 const UserStats = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -13,57 +15,59 @@ const UserStats = () => {
     };
 
     return (
-        <div className="m-auto flex items-center mt-5 space-x-2 my-2">
-            <div className="flex items-center">
-                <div className="flex items-center space-x-1">
-                    <div className="flex items-center space-x-1">
+        <div className="userstatcontainer w-full right-0 top-0">
+            <div className="flex items-center flex-row gap-10 ">
+                <div className="flex flex-row items-center gap-6">
+                    <button className="flex items-center space-x-2">
                         <img
                             src="https://media.discordapp.net/attachments/1100745859664191558/1110881341538582619/SOLIDUS.png?width=507&height=473"
                             alt="Solidus"
                             className="w-6 h-6"
                         />
-                        <span className="text-sm font-bold text-gray-700">2103</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                        <LightningBoltIcon className="w-5 h-5 text-yellow-500 border-none" />
-                        <span className="text-sm font-bold text-gray-700">4</span>
-                    </div>
+                        <span className="solidustext">2103</span>
+                    </button>
+                    <button className="flex items-center space-x-2">
+                        <FontAwesomeIcon icon={faBolt} className='h-5' style={{color: "#ffdb4c"}} />
+                        <span className="streaktext">4</span>
+                    </button>
                 </div>
-                <button className="flex items-center justify-center w-9 h-9 rounded-full ml-5" onClick={toggleDropdown}>
+                <button className="profile" onClick={toggleDropdown}>
                     <img
-                        src="https://images-ext-2.discordapp.net/external/DIFSNofJMpvwlIy8ho906dM-uDWwv8Q5BDuHvioAUmk/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1018595819416469624/058a438fcb880feccc43a2b27a6d789a.png?width=473&height=473"
+                        src="https://cdn.discordapp.com/attachments/1100745859664191558/1114862411086839848/Screenshot_2023-06-04_at_6.24.12_AM.png"
                         alt="Clickable Icon"
-                        className="w-9 h-9 rounded-full"
+                        className="w-full h-full rounded-full"
                     />
                 </button>
                 {isDropdownOpen && (
-                    <div className="absolute top-12 right-0 mt-1 mr-5 bg-white rounded-lg shadow-lg z-50">
-                        <div className="flex flex-col space-y-2 py-1">
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <HomeIcon className="w-4 h-4" />
-                                <span>Homepage</span>
+                    <div className="dropdowncont">
+                            <button className="menuitem">
+                                <HomeIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Homepage</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <UserIcon className="w-4 h-4" />
-                                <span>Profile</span>
+                            <button className="menuitem">
+                                <UserCircleIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Profile</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <CalendarIcon className="w-4 h-4" />
-                                <span>Calendar</span>
+                            <button className="menuitem">
+                                <CalendarIcon className="w-6 h-6 icon"/>
+                                <span className='menutext'>Calendar</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <DownloadIcon className="w-4 h-4" />
-                                <span>Skill Store</span>
+                            <button className="menuitem">
+                                <DownloadIcon className="w-6 h-6 icon"/>
+                                <span className='menutext'>Skill Store</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-gray-500 text-sm px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
-                                <ShoppingCartIcon className="w-4 h-4" />
-                                <span>Buy Solidus</span>
+                            <button className="menuitem">
+                                <ShoppingCartIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Buy Solidus</span>
                             </button>
-                            <button className="flex mr-2 ml-2 rounded-md items-center space-x-2 text-red-500 text-sm px-4 py-2 hover:bg-red-100 focus:outline-none focus:bg-red-200">
-                                <LogoutIcon className="w-4 h-4" />
-                                <span>Log out</span>
+                            <button className="menuitem">
+                                <CogIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Settings</span>
                             </button>
-                        </div>
+                            <button className="menuitem">
+                                <LogoutIcon className="w-6 h-6 icon" />
+                                <span className='menutext'>Log out</span>
+                            </button>
                     </div>
                 )}
             </div>

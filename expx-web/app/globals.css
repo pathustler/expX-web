@@ -15,8 +15,13 @@
 		}
 	}
 }
-.border-color-default {
-	border-color: #efefef;
+
+.w-rightside {
+  width: 30rem;
+}
+
+.border-color-default { 
+  border-color: #EFEFEF;
 }
 .bg-main {
 	background-color: #f8f9f9;
@@ -219,9 +224,8 @@ body {
 	background-color: #ffffff;
 	border: 2px solid #e8e8e8;
 }
-.activehover {
-	background-color: #1e465c;
-	border: 2px solid #e8e8e8;
+.activehover{
+  background-color: #1E465C;
 }
 .activehover:hover {
 	background-color: #193c4f;
