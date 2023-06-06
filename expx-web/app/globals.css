@@ -16,6 +16,69 @@
   }
 }
 
+.calendar{
+	width: 24px;
+	height: 24px;
+	
+	color:#FCFCFC;
+}
+.search{
+	width: 18px;
+	height: 18px;
+
+	color: #6C6C70;
+}
+
+.fixedcontsearch{
+	display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+display: flex;
+  padding: 10px;
+width: 3.5rem;
+height: 3.5rem;
+margin: auto;
+background: #F4F5F4;
+border-radius: 16px;
+}
+
+.fixedcontcal{
+	display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px;
+gap: 10px;
+margin: auto;
+width: 3.5rem;
+height: 3.5rem;
+
+background: #0C5D8B;
+border-radius: 16px;
+
+}
+/*HIDE SCROLLBAR*/
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* */
+
+.fixedcontcal:hover{
+	background: #073a58;
+}
+.fixedcontsearch:hover{
+	background: #e9e9e9;
+}
+
+
 .w-rightside {
   width: 30rem;
 }

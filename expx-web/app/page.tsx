@@ -1,7 +1,6 @@
 "use client";
 import Sidebar from "@/components/homepage/Sidebar"
 import SkillStats from "@/components/homepage/SkillStats"
-import ThemeMode from "@/components/homepage/ThemeMode"
 import UserStats from "@/components/homepage/UserStats"
 import React, { useState } from 'react';
 import DayActive from "@/components/homepage/dayscomponents/DayActive";
@@ -14,15 +13,11 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-row items-center w-full h-screen">
-        <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar">
+        <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar overflow-y-scroll noscrollbar">
           <Sidebar />
-          
-          <div>
-            <ThemeMode />
-          </div>
         </div>
-        <div className="w-full bg-main flex flex-row pt-16 overflow-y-scroll justify-center border-r-2 border-color-default h-full ">
-          <div className="w-full flex flex-col mx-auto items-center gap-8 overflow-y-scroll">
+        <div className="w-full bg-main flex flex-row  overflow-y-scroll justify-center border-r-2 border-color-default h-full ">
+          <div className="w-full flex flex-col pt-16 mx-auto items-center gap-8 overflow-y-scroll noscrollbar">
             <DayGray day="1" title="Learn to Create Variables with data"/>
             <DayActive day="2" title="Learn to Create Variables with data"/>
             <DayNormal day="3" title="Learn to Create Variables with data"/>

@@ -1,13 +1,17 @@
 "use client";
 import { useState } from "react";
 import Logo from '../../public/images/logo.svg'
+import { CalendarIcon, SearchIcon } from "@heroicons/react/outline";
 
 export default function Sidebar() {
     var thumbnails: string[] = [
         'https://static.vecteezy.com/system/resources/previews/006/945/737/non_2x/simple-karate-logo-vector.jpg',
         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png',
         'https://assets.hongkiat.com/uploads/kitchen-cooking-icon-sets/cooking-stuff-icon.jpg',
-        'https://t3.ftcdn.net/jpg/04/79/81/76/360_F_479817672_BpTyGX9qAl3rs9mHqvQUsyWXTJrkLUII.jpg'
+        'https://t3.ftcdn.net/jpg/04/79/81/76/360_F_479817672_BpTyGX9qAl3rs9mHqvQUsyWXTJrkLUII.jpg',
+        'https://images.saatchiart.com/saatchi/877178/art/3855212/2925095-HSC00001-7.jpg',
+        'https://i.pinimg.com/originals/d8/1a/23/d81a23ca807e5ca1133c443e9477d13c.jpg',
+        'https://thumbs.dreamstime.com/b/cartoon-fish-icon-isolated-white-background-vector-145039784.jpg'
     ]
     var names: string[] = [
         'Karate for noobs',
@@ -52,15 +56,22 @@ export default function Sidebar() {
                             </button>
                         ))
                     }
-                    <button className='calendar-item'>
-
+                     
+                    <button className='fixedcontcal'>
+                        <div>
+                        <CalendarIcon className="iconside calendar" />
+                        </div>
+                            
                     </button>
-                    <button className='search-item'>
+                    <button className='fixedcontsearch  '>
+                        <div>
+                            <SearchIcon className="iconside search"/> 
+                        </div>
+                           
                         
                     </button>
                 </div>
             </div>
-
         </>
     )
 }
