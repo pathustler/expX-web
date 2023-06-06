@@ -66,7 +66,7 @@ const SkillStats: React.FC<SkillStatsProps> = ({ skillId }) => {
       <p className="content">{skill.duration}</p>
       </div>
       
-      <div className=" sm:hidden md:hidden lg:block">
+      <div>
         <h3 className="subtitles ">Expected Mastery Date</h3>
         <p className="content">{skill.masteryDate}</p>
       </div>

@@ -3,7 +3,7 @@ import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, Shop
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../app/stats.css'
-const UserStats = () => {
+const UserStats = (props:any, activeIndex:any) => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -13,6 +13,8 @@ const UserStats = () => {
     const closeDropdown = () => {
         setDropdownOpen(false);
     };
+    const active = props.activeIndex
+
 
     return (
         <div className="userstatcontainer w-full right-0 top-0">
@@ -40,31 +42,31 @@ const UserStats = () => {
                 </button>
                 {isDropdownOpen && (
                     <div className="dropdowncont">
-                            <button className="menuitem">
+                            <button className={active==1?"menuitem active":"menuitem "}>
                                 <HomeIcon className="w-6 h-6 icon" />
                                 <span className='menutext'>Homepage</span>
                             </button>
-                            <button className="menuitem">
+                            <button className={active==2?"menuitem active":"menuitem "}>
                                 <UserCircleIcon className="w-6 h-6 icon" />
                                 <span className='menutext'>Profile</span>
                             </button>
-                            <button className="menuitem">
+                            <button className={active==3?"menuitem active":"menuitem "}>
                                 <CalendarIcon className="w-6 h-6 icon"/>
                                 <span className='menutext'>Calendar</span>
                             </button>
-                            <button className="menuitem">
+                            <button className={active==4?"menuitem active":"menuitem "}>
                                 <DownloadIcon className="w-6 h-6 icon"/>
                                 <span className='menutext'>Skill Store</span>
                             </button>
-                            <button className="menuitem">
+                            <button className={active==5?"menuitem active":"menuitem "}>
                                 <ShoppingCartIcon className="w-6 h-6 icon" />
                                 <span className='menutext'>Buy Solidus</span>
                             </button>
-                            <button className="menuitem">
+                            <button className={active==6?"menuitem active":"menuitem "}>
                                 <CogIcon className="w-6 h-6 icon" />
                                 <span className='menutext'>Settings</span>
                             </button>
-                            <button className="menuitem">
+                            <button className={active==7?"menuitem active":"menuitem "}>
                                 <LogoutIcon className="w-6 h-6 icon" />
                                 <span className='menutext'>Log out</span>
                             </button>
