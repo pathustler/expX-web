@@ -8,7 +8,7 @@
             {
                 "skillId": "12345",
                 "icon": "skill_icon.png",
-                "title": "Skill Title 1",
+                "title": "Java Basics",
                 "builder": "John Doe",
                 "tags": [
                     "Premium"
@@ -16,7 +16,41 @@
                 "duration": "2 weeks",
                 "currentDay": 7,
                 "masteryDate": "2023-06-10",
-                "masteryReward": "1000"
+                "masteryReward": "1000",
+                "days": {
+                  "day1": {
+                    "dayType": "finished",
+                    "description": "description"
+                  },
+                  "day2": {
+                    "dayType": "pending",
+                    "description": "description"
+                  },
+                  "day3": {
+                    "dayType": "pending",
+                    "description": "description"
+                  },
+                  "day4": {
+                    "dayType": "pending",
+                    "description": "description"
+                  },
+                  "day5": {
+                    "dayType": "pending",
+                    "description": "description"
+                  },
+                  "day6": {
+                    "dayType": "pending",
+                    "description": "description"
+                  },
+                  "day7": {
+                    "dayType": "quiz",
+                    "description": "description"
+                  },
+                  "day8": {
+                    "dayType": "rest",
+                    "description": "description"
+                  }
+                }
             },
             {
                 "skillId": "67890",
@@ -29,7 +63,41 @@
                 "duration": "1 month",
                 "currentDay": 14,
                 "masteryDate": "2023-06-17",
-                "masteryReward": "800"
+                "masteryReward": "800",
+                "days": {
+                    "day1": {
+                      "dayType": "finished",
+                      "description": "description"
+                    },
+                    "day2": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day3": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day4": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day5": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day6": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day7": {
+                      "dayType": "quiz",
+                      "description": "description"
+                    },
+                    "day8": {
+                      "dayType": "rest",
+                      "description": "description"
+                    }
+                  }
             }
         ],
 
@@ -45,7 +113,41 @@
                 "duration": "3 weeks",
                 "currentDay": 21,
                 "masteryDate": "2023-06-24",
-                "masteryReward": "900"
+                "masteryReward": "900",
+                "days": {
+                    "day1": {
+                      "dayType": "finished",
+                      "description": "description"
+                    },
+                    "day2": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day3": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day4": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day5": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day6": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day7": {
+                      "dayType": "quiz",
+                      "description": "description"
+                    },
+                    "day8": {
+                      "dayType": "rest",
+                      "description": "description"
+                    }
+                  }
             },
             {
                 "skillId": "24680",
@@ -58,7 +160,41 @@
                 "duration": "2 months",
                 "currentDay": 30,
                 "masteryDate": "2023-07-02",
-                "masteryReward": "1200"
+                "masteryReward": "1200",
+                "days": {
+                    "day1": {
+                      "dayType": "finished",
+                      "description": "description"
+                    },
+                    "day2": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day3": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day4": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day5": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day6": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day7": {
+                      "dayType": "quiz",
+                      "description": "description"
+                    },
+                    "day8": {
+                      "dayType": "rest",
+                      "description": "description"
+                    }
+                  }
             },
             {
                 "skillId": "98765",
@@ -71,7 +207,41 @@
                 "duration": "1.5 months",
                 "currentDay": 45,
                 "masteryDate": "2023-07-15",
-                "masteryReward": "950"
+                "masteryReward": "950",
+                "days": {
+                    "day1": {
+                      "dayType": "finished",
+                      "description": "description"
+                    },
+                    "day2": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day3": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day4": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day5": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day6": {
+                      "dayType": "pending",
+                      "description": "description"
+                    },
+                    "day7": {
+                      "dayType": "quiz",
+                      "description": "description"
+                    },
+                    "day8": {
+                      "dayType": "rest",
+                      "description": "description"
+                    }
+                  }
             }
         ]
     }
