@@ -29,7 +29,7 @@ const SkillStats: React.FC<SkillStatsProps> = ({ skillId }) => {
   const tagColors = ["bg-premium", "bg-verified", "bg-normal",];
 
   return (
-    <div className="skillstatcontainer">
+    <div className="skillstatcontainer my-auto">
 
 
     <div>
@@ -65,7 +65,10 @@ const SkillStats: React.FC<SkillStatsProps> = ({ skillId }) => {
       <h3 className="subtitles">Course Duration</h3>
       <p className="content">{skill.duration}</p>
       </div>
-      
+      <div className="sm:hidden md:hidden lg:block xl:block 2xl:block">
+      <h3 className="subtitles">Current Day</h3>
+      <p className="content">{skill.currentDay}</p>
+      </div>
       <div>
         <h3 className="subtitles ">Expected Mastery Date</h3>
         <p className="content">{skill.masteryDate}</p>
