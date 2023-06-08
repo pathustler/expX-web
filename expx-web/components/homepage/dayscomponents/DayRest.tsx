@@ -6,7 +6,7 @@ export default function DayRest(day:any, title:any){
             <div className="daycontainer resthover">
                 <div className="leftdaycont">
                     <h1 className={"day restday"}>Day 2 - Rest</h1>
-                    <h2 className="daytitle resttitle">Learn to Create Variables with data </h2>
+                    <h2 className="daytitle resttitle sm:hidden md:hidden lg:block xl:block 2xl:block">Learn to Create Variables with data </h2>
                 </div>
                 <div className="rightdaycont">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="#4E95BD" className="w-6 h-6">

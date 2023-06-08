@@ -1,0 +1,96 @@
+.skillstatcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    isolation: isolate;
+    gap: -113px;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+  }
+  .imagediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 10px;
+    isolation: isolate;
+    width: 211px;
+    height: 185.95px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .contentcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 5.5rem 1rem 2rem 1rem;
+    gap: 4pxpx;
+    isolation: isolate;
+    border: 1px solid #EEEEEE;
+    border-radius: 1.8rem;
+    transform: translateY(-100px);
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.04);
+  }
+  
+  .contentinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap:0.5rem
+  }
+
+  .mainskilltitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .devname{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .subtitles{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 28px;
+  }
+  .content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .rewardcontent{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #388BA6;
+    ;
+  
+  }

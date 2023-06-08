@@ -99,7 +99,9 @@ flex: none;
 order: 1;
 flex-grow: 1;
 }
-
+.active {
+    background-color: #F4F4F4;
+}
 .menuitem:hover{
     background-color: #F4F4F4;
 }

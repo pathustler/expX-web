@@ -6,7 +6,7 @@ export default function DayNormal(day:any, title:any){
             <div className="daycontainer normalhover">
                 <div className="leftdaycont">
                     <h1 className="day normalday">Day 3</h1>
-                    <h2 className="daytitle normaltitle">Learn to Create Variables with data </h2>
+                    <h2 className="daytitle normaltitle sm:hidden md:hidden lg:block xl:block 2xl:block">Learn to Create Variables with data </h2>
                 </div>
                 <div className="rightdaycont">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.3)" className="w-6 h-6">

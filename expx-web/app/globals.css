@@ -16,17 +16,86 @@
 	}
 }
 
-.w-rightside {
-  width: 30rem;
+@font-face {
+	font-family: Inter;
+	src: url("../static/font/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
 
-.border-color-default { 
-  border-color: #EFEFEF;
+.calendar {
+	width: 24px;
+	height: 24px;
+
+	color: #fcfcfc;
+}
+.search {
+	width: 18px;
+	height: 18px;
+
+	color: #6c6c70;
+}
+
+.fixedcontsearch {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	display: flex;
+	padding: 10px;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: auto;
+	background: #f4f5f4;
+	border-radius: 16px;
+}
+
+.fixedcontcal {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	gap: 10px;
+	margin: auto;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: #0c5d8b;
+	border-radius: 16px;
+}
+
+body {
+	overflow: hidden;
+}
+/*HIDE SCROLLBAR*/
+.noscrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+/* */
+
+.fixedcontcal:hover {
+	background: #073a58;
+}
+.fixedcontsearch:hover {
+	background: #e9e9e9;
+}
+
+.w-rightside {
+	width: 30rem;
+}
+
+.border-color-default {
+	border-color: #efefef;
 }
 .bg-main {
 	background-color: #f8f9f9;
 }
-.active {
+.activesidebaritem {
 	border: 2px solid #f1f1f1;
 }
 .skill-container {
@@ -58,26 +127,7 @@
 .bg-verified {
 	background-color: #ffbb36;
 }
-.skillstatcontainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	isolation: isolate;
-	gap: -113px;
-}
-.imagediv {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0px 0px;
-	gap: 10px;
-	isolation: isolate;
-	width: 211px;
-	height: 185.95px;
-	position: relative;
-	z-index: 2;
-}
+
 .imageicon {
 	width: 8rem;
 	height: 8rem;
@@ -86,80 +136,10 @@
 	border: 4px solid #eeeeee;
 }
 
-.mainskilltitle {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 28px;
-}
-.devname {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 28px;
-}
-.subtitles {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	text-transform: uppercase;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 13px;
-	line-height: 28px;
-}
-.content {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 28px;
-	color: rgba(0, 0, 0, 0.5);
-}
-.rewardcontent {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 15px;
-	line-height: 28px;
-	/* or 187% */
-
-	display: flex;
-	align-items: center;
-
-	color: #388ba6;
-}
-.contentcontainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-	padding: 5.5rem 1rem 2rem 1rem;
-	gap: 4pxpx;
-	isolation: isolate;
-	border: 1px solid #eeeeee;
-	border-radius: 1.8rem;
-	transform: translateY(-100px);
-	z-index: 1;
-	background: #ffffff;
-	box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.04);
-}
-
-.contentinner {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 0.5rem;
-}
-
 .bottombar {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	padding: 0px;
 	gap: 1.3rem;
 }
@@ -176,7 +156,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.3rem 1.3rem 1.3rem 1.3rem;
+	padding: 1.3rem 1.5rem 1.3rem 1.5rem;
 	gap: 32px;
 }
 .w-027 {
@@ -198,15 +178,43 @@ body {
 		rgb(var(--background-start-rgb));
 }
 
-/* Revan's normal CSS */
+/* Revan's Custom TailwindCSS */
 
-.icon-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.bg-gray-self-900 {
+	background-color: #2a2a2e;
 }
 
-/* Pss */
+.bg-gray-self-800 {
+	background-color: #4d4d4f;
+}
+
+.bg-gray-self-700 {
+	background-color: #707072;
+}
+
+.bg-gray-self-600 {
+	background-color: #979797;
+}
+
+.bg-silver-self-400 {
+	background-color: #bebebe;
+}
+
+.bg-silver-self-300 {
+	background-color: #d6d6d6;
+}
+
+.bg-silver-self-200 {
+	background-color: #ededed;
+}
+
+.border-gray-self-900 {
+	border: 2px solid #2a2a2e;
+}
+
+.border-silver-self-300 {
+	border: 2px solid #bebebe;
+}
 
 .daycontainer {
 	display: flex;
@@ -224,8 +232,8 @@ body {
 	background-color: #ffffff;
 	border: 2px solid #e8e8e8;
 }
-.activehover{
-  background-color: #1E465C;
+.activehover {
+	background-color: #1e465c;
 }
 .activehover:hover {
 	background-color: #193c4f;
