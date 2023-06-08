@@ -8,7 +8,7 @@ interface CalendarProps {
   secondArray: string[];
 }
 
-const Calendar: React.FC<CalendarProps> = ({ firstArray, secondArray }) => {
+const Calendar: React.FC<CalendarProps> = (streak) => {
   
   const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -107,12 +107,10 @@ const Calendar: React.FC<CalendarProps> = ({ firstArray, secondArray }) => {
                     if (!isCurrentMonth) {
                       buttonClassName = 'disabled';
                     } else if (isToday) {
-                      buttonClassName = 'today';
-                    } else {
-                      if (secondArray.includes(formattedDate)) {
+                      buttonClassName = 'second-array';
+                    } else if([streak].includes(formattedDate) && !isToday)  {
+                       {
                         buttonClassName = 'first-array';
-                      } else if (formatted_today.includes(formattedDate)) {
-                        buttonClassName = 'second-array';
                       }
                     }
 
