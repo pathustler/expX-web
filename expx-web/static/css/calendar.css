@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calendarContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 6fr;
+	height: 100vh;
+	gap: 0;
+	margin: 0;
+}
+
+.calendarcontainer{
+	box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px;
+
+
+background: #FFFFFF;
+border: 2px solid #EEEEEE;
+border-radius: 20px;
+
+
+}
+
+
+.calendarcells{
+	display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+justify-content: space-between;
+height: 28rem ;
+width: 28rem;
+padding-top: 12px;
+}
+
+.header {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.btntext {
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+text-align: center;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #000000;
+}
+.btnclass {
+	/* Cell */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+
+width: 60px;
+height: 60px;
+
+/* Stroke */
+
+border: 1px solid #D5D4DF;
+border-radius: 20px;
+
+}
+
+.daybtnclass {
+	display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+
+width: 60px;
+height: 60px;
+}
+
+.topbarArea {
+	grid-column: 1 / span 2;
+	background-color: white;
+}
+
+.dataArea {
+	background-color: #F8F9F9;
+}
+
+.calendarArea {
+	background-color: #F8F9F9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.buttonText {
+	font-size: 10px;
+}
+
+.first-array {
+	background-color: #0085A9 !important;
+	color: #FFFFFF;
+}
+
+.first-array:hover {
+	background-color: #007595 !important;
+}
+
+.first-array:active {
+	background-color: #006a88 !important;
+}
+
+.second-array {
+	background-color: #1E465C;
+	color: #FFFFFF;
+}
+
+.second-array:hover {
+	background-color: #24546d !important;
+}
+
+.second-array:active {
+	background-color: rgb(37, 96, 127) !important;
+}

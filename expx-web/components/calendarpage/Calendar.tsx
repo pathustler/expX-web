@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { format, addMonths, subMonths, startOfWeek, endOfWeek, startOfMonth, endOfMonth, isSameMonth, isSameDay, getDate } from 'date-fns';
 import '../../static/css/custom.css';
-import '../../app/calendar.css';
+import '../../static/css/calendar.css';;
 
 interface CalendarProps {
   firstArray: string[];
@@ -9,6 +9,7 @@ interface CalendarProps {
 }
 
 const Calendar: React.FC<CalendarProps> = ({ firstArray, secondArray }) => {
+  
   const [currentDate, setCurrentDate] = useState(new Date());
 
   const navigateToPreviousMonth = () => {
@@ -20,28 +21,58 @@ const Calendar: React.FC<CalendarProps> = ({ firstArray, secondArray }) => {
   };
 
   const renderCalendarHeader = () => {
-    const formattedDate = format(currentDate, 'MMMM yyyy');
+    const formattedDate = format(currentDate, 'MMMM YYYY');
 
     return (
       <div className="flex justify-between">
-        <span className="text-md font-bold">{formattedDate}</span>
-        <div>
-          <button className="text-lg mr-2" onClick={navigateToPreviousMonth}>
-            {'<'}
+        <span className="header">{formattedDate}</span>
+        <div className='flex flex-row items-center gap-3'>
+          <button  className='flex flex-row items-center gap-3' onClick={navigateToPreviousMonth}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-5">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+</svg>
+
           </button>
-          <button className="text-lg" onClick={navigateToNextMonth}>
-            {'>'}
+          <button  className='flex flex-row items-center gap-3' onClick={navigateToNextMonth}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-5">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
           </button>
         </div>
       </div>
     );
   };
 
+
+  function getNumberOfWeeksInMonth() {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth();
+    const currentYear = currentDate.getFullYear();
+  
+    // Get the first day of the month
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+  
+    // Get the last day of the month
+    const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
+  
+    // Calculate the number of days in the month
+    const totalDaysInMonth = lastDayOfMonth.getDate();
+  
+    // Calculate the number of weeks in the month
+    const totalWeeksInMonth = Math.ceil((firstDayOfMonth.getDay() + totalDaysInMonth) / 7);
+  
+    return totalWeeksInMonth;
+  }
+
+
   const renderCalendarCells = () => {
     const startDate = startOfWeek(startOfMonth(currentDate));
     const endDate = endOfWeek(endOfMonth(currentDate));
-    const days: Date[] = [];
 
+
+    const days: Date[] = [];
+    const formatted_today= format(currentDate,"dd-MM-yy")
     let day = startDate;
     while (day <= endDate) {
       days.push(day);
@@ -51,23 +82,20 @@ const Calendar: React.FC<CalendarProps> = ({ firstArray, secondArray }) => {
     const weekdays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
     return (
-      <table className="mx-auto">
-        <thead>
-          <tr>
+      <div className="calendarcells">
+        <div className='flex flex-row items-center w-full justify-between'>
             {weekdays.map((weekday) => (
-              <th key={weekday} className="buttonText font-normal">
-                {weekday}
-              </th>
+              <div key={weekday} className="buttonText font-normal daybtnclass">
+                <h1 className='btntext'>{weekday}</h1>
+              </div>
             ))}
-          </tr>
-        </thead>
-        <tbody>
+        </div>
           {Array(Math.ceil(days.length / 7))
             .fill(null)
             .map((_, rowIndex) => {
               const weekDaysSlice = days.slice(rowIndex * 7, rowIndex * 7 + 7);
               return (
-                <tr key={rowIndex}>
+                <div key={rowIndex} className='flex flex-row items-center w-full justify-between'>
                   {weekDaysSlice.map((date) => {
                     const isCurrentMonth = isSameMonth(date, currentDate);
                     const isToday = isSameDay(date, new Date());
@@ -81,36 +109,35 @@ const Calendar: React.FC<CalendarProps> = ({ firstArray, secondArray }) => {
                     } else if (isToday) {
                       buttonClassName = 'today';
                     } else {
-                      if (firstArray.includes(formattedDate)) {
+                      if (secondArray.includes(formattedDate)) {
                         buttonClassName = 'first-array';
-                      } else if (secondArray.includes(formattedDate)) {
+                      } else if (formatted_today.includes(formattedDate)) {
                         buttonClassName = 'second-array';
                       }
                     }
 
                     return (
-                      <td key={date.getTime()}>
+                      <div key={date.getTime()}>
                         <button
-                          className={`${!isCurrentMonth ? 'text-gray-300 border-gray-200 hover:bg-white' : 'text-black border-gray-200'
-                            } ${buttonClassName} bg-white border-2 hover:bg-gray-200 rounded-xl p-2 buttonText w-10 h-10`}
+                          className={`${!isCurrentMonth ? 'text-gray-300 border-gray-200 hover:bg-white' : 'text-black border-gray-200' 
+                            } ${buttonClassName} btnclass`}
                           disabled={!isCurrentMonth}
                           style={buttonStyle}
                         >
                           {getDate(date)}
                         </button>
-                      </td>
+                      </div>
                     );
                   })}
-                </tr>
+                </div>
               );
             })}
-        </tbody>
-      </table>
+        </div>
     );
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="calendarcontainer">
       <div className="inline-block">
         {renderCalendarHeader()}
         <div>{renderCalendarCells()}</div>
