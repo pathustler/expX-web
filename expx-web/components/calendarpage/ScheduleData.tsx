@@ -10,57 +10,78 @@ const ScheduleData = () => {
   const items = [
     {
       image:
-        "https://cdn-icons-png.flaticon.com/512/4500/4500055.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
       description: "Learn to Create Variables with data",
       day: "5",
     },
     {
       image:
-        "https://play-lh.googleusercontent.com/uUUCNw6SbSJDkZW_A6sMER63Or6M878kI1r3Y4eAeMeLvDW9IvneBSwQXYs4fLa_5RQ",
+      'https://images.saatchiart.com/saatchi/877178/art/3855212/2925095-HSC00001-7.jpg',
       description: "Example description 2",
       day: "8",
     },
     {
       image:
-        "https://cdn.icon-icons.com/icons2/2055/PNG/512/chess_icon_124504.png",
+      'https://assets.hongkiat.com/uploads/kitchen-cooking-icon-sets/cooking-stuff-icon.jpg',
       description: "Example description 3",
       day: "12",
+    },{
+      image:
+      'https://t3.ftcdn.net/jpg/04/79/81/76/360_F_479817672_BpTyGX9qAl3rs9mHqvQUsyWXTJrkLUII.jpg',
+      description: "Example description 3",
+      day: "12",
+    },{
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png",
+      description: "Learn to Create Variables with data",
+      day: "5",
     },
+    {
+      image:
+      'https://images.saatchiart.com/saatchi/877178/art/3855212/2925095-HSC00001-7.jpg',
+      description: "Example description 2",
+      day: "8",
+    },
+    {
+      image:
+      'https://assets.hongkiat.com/uploads/kitchen-cooking-icon-sets/cooking-stuff-icon.jpg',
+      description: "Example description 3",
+      day: "12",
+    },{
+      image:
+      'https://t3.ftcdn.net/jpg/04/79/81/76/360_F_479817672_BpTyGX9qAl3rs9mHqvQUsyWXTJrkLUII.jpg',
+      description: "Example description 3",
+      day: "12",
+    }
   ];
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="bg-white border-gray-300 border rounded-3xl p-4">
-        <h1 className="text-2xl font-bold mb-4">{currentDate}</h1>
+    <div className="schedule-container">
+        <h1 className="header">{currentDate}</h1>
 
         <div
-          className="max-h-70vh overflow-y-auto flex flex-col gap-2"
-          style={{
-            maxHeight: "70vh",
-            scrollbarWidth: "thin",
-            scrollbarColor: "transparent transparent",
-          }}
-        >
+          className="max-h-70vh overflow-y-auto noscrollbar flex flex-col gap-2 w-full ">
           {items.map((item, index) => (
-            <div className="flex items-center justify-between" key={index}>
+            <button className="flex items-center w-full justify-between p-3 rounded-2xl hover:bg-slate-50" key={index}>
               <div className="flex items-center">
                 <img
                   src={item.image}
                   alt="Icon"
-                  className="w-12 h-12 rounded-xl p-1 mr-2"
+                  className="w-12 h-12 rounded-2xl border-2 border-gray-50 p-1 mr-2"
                 />
-                <p className="text-sm mr-10 text-gray-600">
+                <p className="itemdesc">
                   {item.description}
                 </p>
               </div>
-              <p className="text-sm whitespace-nowrap font-semibold">
+              <p className="daytag">
                 Day {item.day}
               </p>
-            </div>
+            </button>
           ))}
         </div>
+
+
       </div>
-    </div>
   );
 };
 

@@ -12,12 +12,14 @@ const CalendarPage = () => {
       <div className="topbarArea">
         <TopBar/>
       </div>
+
       <div className="calendarArea">
           <CalendarComponent streaks={streaks} />
       </div>
       <div className="dataArea">
         <ScheduleData />
       </div>
+      
     </div>
   );
 };

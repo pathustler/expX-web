@@ -20,7 +20,7 @@ const Calendar: React.FC<CalendarProps> = ({ streaks }) => {
     };
     
     const renderCalendarHeader = () => {
-        const formattedDate = format(currentDate, 'MMMM yyyy');
+        const formattedDate = format(currentDate, 'MMMM YYYY');
 
         return (
             <div className="flex justify-between">
@@ -95,7 +95,7 @@ const Calendar: React.FC<CalendarProps> = ({ streaks }) => {
                                     return (
                                         <div key={date.getTime()}>
                                             <button
-                                                className={`${!isCurrentMonth ? 'text-gray-300 border-gray-200 hover:bg-white' : 'text-black border-gray-200'
+                                                className={`${!isCurrentMonth ? 'text-gray-300 border-gray-200 hover:bg-white' : 'text-black border-gray-200 hover:bg-slate-50'
                                                     } ${buttonClassName} btnclass`}
                                                 disabled={!isCurrentMonth}
                                                 style={buttonStyle}
