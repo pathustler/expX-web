@@ -1,15 +1,15 @@
 import { useState } from 'react';
-// import CalendarComponent from '../components/calendarpage/Calendar';
+import CalendarComponent from '../components/calendarpage/Calendar';
 import '../static/css/calendar.css';
 
 const CalendarPage = () => {
-  const streak = ['06-06-23', '09-06-23', '10-06-23'];
+  const streaks = ['06-06-23', '02-06-23', '03-06-23'];
   
   return ( 
     <div className="calendarContainer">
       <div className="topbarArea">Top Bar</div>
       <div className="calendarArea">
-          
+          <CalendarComponent streaks={streaks} />
       </div>
       <div className="dataArea">Data</div>
     </div>
