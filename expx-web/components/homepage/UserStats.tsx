@@ -32,6 +32,7 @@ const UserStats = (props:any, activeIndex:any) => {
 
 
     return (
+        <div className="bg-white h-14p right-0 top-0 flex flex-col">
         <div className="userstatcontainer w-full right-0 top-0">
             <div className="flex items-center flex-row gap-10 ">
                 <div className="flex flex-row items-center gap-6">
@@ -88,6 +89,7 @@ const UserStats = (props:any, activeIndex:any) => {
                     </div>
                 )}
             </div>
+        </div>
         </div>
     );
 };

@@ -346,3 +346,17 @@ body {
 .practicehover:hover {
 	background-color: #0a547e;
 }
+
+.toptitle {
+
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 26px;
+/* identical to box height, or 81% */
+
+
+color: #1B424D;
+
+}

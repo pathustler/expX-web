@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { format, addMonths, subMonths, startOfWeek, endOfWeek, startOfMonth, endOfMonth, isSameMonth, isSameDay, getDate } from 'date-fns';
 import '../../static/css/custom.css';
-import '../../static/css/calendar.css';;
+import '../../static/css/calendar.css';
 
 interface CalendarProps {
     streaks: string[];
@@ -20,7 +20,7 @@ const Calendar: React.FC<CalendarProps> = ({ streaks }) => {
   };
 
   const renderCalendarHeader = () => {
-    const formattedDate = format(currentDate, 'MMMM yyyy');
+    const formattedDate = format(currentDate, 'MMMM YYYY');
 
     return (
       <div className="flex justify-between">
