@@ -4,6 +4,7 @@ import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, Shop
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../static/css/stats.css'
+import Link from 'next/link';
 const UserStats = (props:any, activeIndex:any) => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -68,7 +69,7 @@ const UserStats = (props:any, activeIndex:any) => {
                             </button>
                             <button className={active==3?"menuitem active":"menuitem "}>
                                 <CalendarIcon className="w-6 h-6 icon"/>
-                                <span className='menutext'>Calendar</span>
+                                <Link href="/calendar" className='menutext'>Calendar</Link>
                             </button>
                             <button className={active==4?"menuitem active":"menuitem "}>
                                 <DownloadIcon className="w-6 h-6 icon"/>

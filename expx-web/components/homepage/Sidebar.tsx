@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Logo from '../../public/images/logo.svg'
 import { CalendarIcon, SearchIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 export default function Sidebar() {
     var thumbnails: string[] = [
@@ -58,9 +59,9 @@ export default function Sidebar() {
                     }
                      
                     <button className='fixedcontcal'>
-                        <div>
+                        <Link href="/calendar" >
                         <CalendarIcon className="iconside calendar" />
-                        </div>
+                        </Link>
                             
                     </button>
                     <button className='fixedcontsearch  '>
