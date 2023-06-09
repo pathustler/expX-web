@@ -57,13 +57,14 @@ export default function Sidebar() {
                             </button>
                         ))
                     }
-                     
+                     <Link href="/calendar" >
                     <button className='fixedcontcal'>
-                        <Link href="/calendar" >
+                        
                         <CalendarIcon className="iconside calendar" />
-                        </Link>
+                        
                             
                     </button>
+                    </Link>
                     <button className='fixedcontsearch  '>
                         <div>
                             <SearchIcon className="iconside search"/> 
