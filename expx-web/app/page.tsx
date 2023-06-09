@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col w-rightside gap-y-0.5 skill-info-gap bg-white  h-full">
-          <div className="bg-white h-14p content-center flex flex-col text-center w-full">
+          <div>
             <UserStats activeIndex={1} />
           </div>
           <SkillStats skillId="13579" />

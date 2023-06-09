@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.userstatcontainer{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-top: 43px ;
+padding-right: 15px;
+padding-left: 15px;
+right: 0;
+top: 0;
+float: right;
+flex-direction: column-reverse;
+
+
+}
+
 .calendarContainer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -10,6 +26,14 @@
 	gap: 0;
 	margin: 0;
 }
+
+
+@font-face {
+	font-family: Inter;
+	src: url("../font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+
 
 .calendarcontainer{
 	box-sizing: border-box;
@@ -42,7 +66,7 @@ padding-top: 12px;
 }
 
 .header {
-	font-family: 'Inter';
+	font-family: Inter;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -55,7 +79,7 @@ color: #000000;
 }
 
 .btntext {
-	font-family: 'Inter';
+	font-family: Inter;
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
@@ -105,6 +129,7 @@ height: 60px;
 .topbarArea {
 	grid-column: 1 / span 2;
 	background-color: white;
+	border-bottom: 2px solid #EFEFEF;
 }
 
 .dataArea {
@@ -148,3 +173,26 @@ height: 60px;
 .second-array:active {
 	background-color: rgb(37, 96, 127) !important;
 }
+
+
+.topcalcontainer {
+	display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 0px 0px 60px;
+gap: 1.5rem;
+}
+
+.toptitle {
+
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 26px;
+	/* identical to box height, or 81% */
+	
+	
+	color: #1B424D;
+	
+	}

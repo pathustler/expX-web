@@ -4,6 +4,7 @@ import { LightningBoltIcon, HomeIcon, UserIcon, CalendarIcon, DownloadIcon, Shop
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../static/css/stats.css'
+import Link from 'next/link';
 const UserStats = (props:any, activeIndex:any) => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -32,6 +33,7 @@ const UserStats = (props:any, activeIndex:any) => {
 
 
     return (
+        <div className="bg-white h-14p right-0 top-0 flex flex-col">
         <div className="userstatcontainer w-full right-0 top-0">
             <div className="flex items-center flex-row gap-10 ">
                 <div className="flex flex-row items-center gap-6">
@@ -67,7 +69,7 @@ const UserStats = (props:any, activeIndex:any) => {
                             </button>
                             <button className={active==3?"menuitem active":"menuitem "}>
                                 <CalendarIcon className="w-6 h-6 icon"/>
-                                <span className='menutext'>Calendar</span>
+                                <Link href="/calendar" className='menutext'>Calendar</Link>
                             </button>
                             <button className={active==4?"menuitem active":"menuitem "}>
                                 <DownloadIcon className="w-6 h-6 icon"/>
@@ -88,6 +90,7 @@ const UserStats = (props:any, activeIndex:any) => {
                     </div>
                 )}
             </div>
+        </div>
         </div>
     );
 };
