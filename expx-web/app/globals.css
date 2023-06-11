@@ -20,13 +20,6 @@
 	font-family: Inter;
 	src: url("../static/font/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
-
-.calendar {
-	width: 24px;
-	height: 24px;
-
-	color: #fcfcfc;
-}
 .search {
 	width: 18px;
 	height: 18px;
@@ -348,15 +341,12 @@ body {
 }
 
 .toptitle {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 26px;
+	/* identical to box height, or 81% */
 
-font-family: Inter;
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 26px;
-/* identical to box height, or 81% */
-
-
-color: #1B424D;
-
+	color: #1b424d;
 }

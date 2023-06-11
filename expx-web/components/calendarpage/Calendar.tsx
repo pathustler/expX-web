@@ -20,7 +20,7 @@ const Calendar: React.FC<CalendarProps> = ({ streaks }) => {
     };
     
     const renderCalendarHeader = () => {
-        const formattedDate = format(currentDate, 'MMMM YYYY');
+        const formattedDate = format(currentDate, 'MMMM yyyy');
 
         return (
             <div className="flex justify-between">
