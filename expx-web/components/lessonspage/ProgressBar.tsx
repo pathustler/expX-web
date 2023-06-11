@@ -10,7 +10,7 @@ interface ProgressBarProps {
 const ProgressBar: React.FC<ProgressBarProps> = ({ percentage }) => {
   return (
     <div className="flex items-center justify-center h-full">
-      <div className="w-2/3">
+      <div className="w-5/6">
         <div className="flex items-center">
           <XIcon className="h-6 w-6 mr-3 text-gray-700" />
           <div className="w-full bg-gray-200 rounded-full h-3">
