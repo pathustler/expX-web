@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/"
+  from = "/calendar"
   to = "/calendar"
   status = 301
   force = false
