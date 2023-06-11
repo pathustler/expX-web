@@ -1,0 +1,46 @@
+.back-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    gap: 10px;
+    
+    width: 160px;
+    height: 60px;
+    
+    background: #E5E5E5;
+    border-radius: 20px;
+}
+
+.disabled {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    gap: 10px;
+    
+    width: 160px;
+    height: 60px;
+    cursor: default;
+    border-radius: 20px;
+background: #E5E5E5;
+color: rgba(0, 0, 0, 0.2);
+
+}
+.next-button{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 60px;
+gap: 10px;
+
+width: 160px;
+height: 60px;
+
+background: #0C5D8B;
+border-radius: 20px;
+color: white;
+}

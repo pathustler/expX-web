@@ -1,15 +1,18 @@
 import React from 'react';
 import "@/app/lessons.css"
-
-const BottomBar = () => {
+import "./lesson.css"
+interface ProgressBarProps {
+  percentage: number;
+}
+const BottomBar: React.FC<ProgressBarProps> = ({ percentage }) => {
   return (
     <div className="flex justify-center items-center h-full">
       <div className="flex justify-between items-center bg-white py-2 w-5/6">
-        <button className="bg-gray-self rounded-xl text-black px-10 py-2 flex items-center">
+        <button className={percentage==0 ? "disabled" : "back-button"}>
           Back
         </button>
-        <button className="bg-blue-self2 rounded-xl text-white px-10 py-2 flex items-center">
-          Next
+        <button className="next-button">
+          {percentage==100 ? "Finish" : "Next"}
         </button>
       </div>
     </div>
