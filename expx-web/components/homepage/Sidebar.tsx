@@ -57,7 +57,7 @@ export default function Sidebar() {
                             </button>
                         ))
                     }
-                     <Link href="/calendar" >
+                     <Link style={{margin:"auto"}} href="/calendar" >
                     <button className='fixedcontcal'>
                         
                         <CalendarIcon className="iconside calendar" />

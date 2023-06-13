@@ -67,10 +67,12 @@ const UserStats = (props:any, activeIndex:any) => {
                                 <UserCircleIcon className="w-6 h-6 icon" />
                                 <span className='menutext'>Profile</span>
                             </button>
-                            <button className={active==3?"menuitem active":"menuitem "}>
-                                <CalendarIcon className="w-6 h-6 icon"/>
-                                <Link href="/calendar" className='menutext'>Calendar</Link>
-                            </button>
+                            <Link href="/calendar">
+                                <button className={active==3?"menuitem active":"menuitem "}>
+                                    <CalendarIcon className="w-6 h-6 icon"/>
+                                    <span className='menutext'>Calendar</span>
+                                </button>
+                            </Link>
                             <button className={active==4?"menuitem active":"menuitem "}>
                                 <DownloadIcon className="w-6 h-6 icon"/>
                                 <span className='menutext'>Skill Store</span>
