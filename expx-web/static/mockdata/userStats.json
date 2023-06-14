@@ -1,248 +1,247 @@
 [
-    {
-        "userName": "Magnus Carlson",
-        "userID": "29428",
-        "userPfp": "29428",
-        "solidusBalance": "20,000",
-        "currentSkills": [
-            {
-                "skillId": "12345",
-                "icon": "skill_icon.png",
-                "title": "Java Basics",
-                "builder": "John Doe",
-                "tags": [
-                    "Premium"
-                ],
-                "duration": "2 weeks",
-                "currentDay": 7,
-                "masteryDate": "2023-06-10",
-                "masteryReward": "1000",
-                "days": {
-                  "day1": {
-                    "dayType": "finished",
-                    "description": "description"
-                  },
-                  "day2": {
-                    "dayType": "pending",
-                    "description": "description"
-                  },
-                  "day3": {
-                    "dayType": "pending",
-                    "description": "description"
-                  },
-                  "day4": {
-                    "dayType": "pending",
-                    "description": "description"
-                  },
-                  "day5": {
-                    "dayType": "pending",
-                    "description": "description"
-                  },
-                  "day6": {
-                    "dayType": "pending",
-                    "description": "description"
-                  },
-                  "day7": {
-                    "dayType": "quiz",
-                    "description": "description"
-                  },
-                  "day8": {
-                    "dayType": "rest",
-                    "description": "description"
-                  }
-                }
-            },
-            {
-                "skillId": "67890",
-                "icon": "skill_icon2.png",
-                "title": "Skill Title 2",
-                "builder": "Jane Smith",
-                "tags": [
-                    "Premium"
-                ],
-                "duration": "1 month",
-                "currentDay": 14,
-                "masteryDate": "2023-06-17",
-                "masteryReward": "800",
-                "days": {
-                    "day1": {
-                      "dayType": "finished",
-                      "description": "description"
-                    },
-                    "day2": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day3": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day4": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day5": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day6": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day7": {
-                      "dayType": "quiz",
-                      "description": "description"
-                    },
-                    "day8": {
-                      "dayType": "rest",
-                      "description": "description"
-                    }
-                  }
-            }
+  {
+    "userName": "Magnus Carlson",
+    "userID": "29428",
+    "userPfp": "29428",
+    "solidusBalance": "20,000",
+    "currentSkills": [
+      {
+        "skillId": "12345",
+        "icon": "skill_icon.png",
+        "title": "Java Basics",
+        "builder": "John Doe",
+        "tags": [
+          "Premium"
         ],
-
-        "completedSkills": [
-            {
-                "skillId": "13579",
-                "icon": "https://assets.hongkiat.com/uploads/kitchen-cooking-icon-sets/cooking-stuff-icon.jpg",
-                "title": "Skill Title 3",
-                "builder": "Alice Johnson",
-                "tags": [
-                    "Premium"
-                ],
-                "duration": "3 weeks",
-                "currentDay": 21,
-                "masteryDate": "2023-06-24",
-                "masteryReward": "900",
-                "days": {
-                    "day1": {
-                      "dayType": "finished",
-                      "description": "description"
-                    },
-                    "day2": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day3": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day4": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day5": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day6": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day7": {
-                      "dayType": "quiz",
-                      "description": "description"
-                    },
-                    "day8": {
-                      "dayType": "rest",
-                      "description": "description"
-                    }
-                  }
-            },
-            {
-                "skillId": "24680",
-                "icon": "skill_icon4.png",
-                "title": "Skill Title 4",
-                "builder": "Bob Williams",
-                "tags": [
-                    "Premium"
-                ],
-                "duration": "2 months",
-                "currentDay": 30,
-                "masteryDate": "2023-07-02",
-                "masteryReward": "1200",
-                "days": {
-                    "day1": {
-                      "dayType": "finished",
-                      "description": "description"
-                    },
-                    "day2": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day3": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day4": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day5": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day6": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day7": {
-                      "dayType": "quiz",
-                      "description": "description"
-                    },
-                    "day8": {
-                      "dayType": "rest",
-                      "description": "description"
-                    }
-                  }
-            },
-            {
-                "skillId": "98765",
-                "icon": "skill_icon5.png",
-                "title": "Skill Title 5",
-                "builder": "Emily Davis",
-                "tags": [
-                    "Premium"
-                ],
-                "duration": "1.5 months",
-                "currentDay": 45,
-                "masteryDate": "2023-07-15",
-                "masteryReward": "950",
-                "days": {
-                    "day1": {
-                      "dayType": "finished",
-                      "description": "description"
-                    },
-                    "day2": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day3": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day4": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day5": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day6": {
-                      "dayType": "pending",
-                      "description": "description"
-                    },
-                    "day7": {
-                      "dayType": "quiz",
-                      "description": "description"
-                    },
-                    "day8": {
-                      "dayType": "rest",
-                      "description": "description"
-                    }
-                  }
-            }
-        ]
-    }
+        "duration": "2 weeks",
+        "currentDay": 7,
+        "masteryDate": "2023-06-10",
+        "masteryReward": "1000",
+        "days": {
+          "day1": {
+            "dayType": "finished",
+            "description": "description"
+          },
+          "day2": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day3": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day4": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day5": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day6": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day7": {
+            "dayType": "quiz",
+            "description": "description"
+          },
+          "day8": {
+            "dayType": "rest",
+            "description": "description"
+          }
+        }
+      },
+      {
+        "skillId": "67890",
+        "icon": "skill_icon2.png",
+        "title": "Skill Title 2",
+        "builder": "Jane Smith",
+        "tags": [
+          "Premium"
+        ],
+        "duration": "1 month",
+        "currentDay": 14,
+        "masteryDate": "2023-06-17",
+        "masteryReward": "800",
+        "days": {
+          "day1": {
+            "dayType": "finished",
+            "description": "description"
+          },
+          "day2": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day3": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day4": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day5": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day6": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day7": {
+            "dayType": "quiz",
+            "description": "description"
+          },
+          "day8": {
+            "dayType": "rest",
+            "description": "description"
+          }
+        }
+      }
+    ],
+    "completedSkills": [
+      {
+        "skillId": "13579",
+        "icon": "https://assets.hongkiat.com/uploads/kitchen-cooking-icon-sets/cooking-stuff-icon.jpg",
+        "title": "Skill Title 3",
+        "builder": "Alice Johnson",
+        "tags": [
+          "Premium"
+        ],
+        "duration": "3 weeks",
+        "currentDay": 21,
+        "masteryDate": "2023-06-24",
+        "masteryReward": "900",
+        "days": {
+          "day1": {
+            "dayType": "finished",
+            "description": "description"
+          },
+          "day2": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day3": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day4": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day5": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day6": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day7": {
+            "dayType": "quiz",
+            "description": "description"
+          },
+          "day8": {
+            "dayType": "rest",
+            "description": "description"
+          }
+        }
+      },
+      {
+        "skillId": "24680",
+        "icon": "skill_icon4.png",
+        "title": "Skill Title 4",
+        "builder": "Bob Williams",
+        "tags": [
+          "Premium"
+        ],
+        "duration": "2 months",
+        "currentDay": 30,
+        "masteryDate": "2023-07-02",
+        "masteryReward": "1200",
+        "days": {
+          "day1": {
+            "dayType": "finished",
+            "description": "description"
+          },
+          "day2": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day3": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day4": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day5": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day6": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day7": {
+            "dayType": "quiz",
+            "description": "description"
+          },
+          "day8": {
+            "dayType": "rest",
+            "description": "description"
+          }
+        }
+      },
+      {
+        "skillId": "98765",
+        "icon": "skill_icon5.png",
+        "title": "Skill Title 5",
+        "builder": "Emily Davis",
+        "tags": [
+          "Premium"
+        ],
+        "duration": "1.5 months",
+        "currentDay": 45,
+        "masteryDate": "2023-07-15",
+        "masteryReward": "950",
+        "days": {
+          "day1": {
+            "dayType": "finished",
+            "description": "description"
+          },
+          "day2": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day3": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day4": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day5": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day6": {
+            "dayType": "pending",
+            "description": "description"
+          },
+          "day7": {
+            "dayType": "quiz",
+            "description": "description"
+          },
+          "day8": {
+            "dayType": "rest",
+            "description": "description"
+          }
+        }
+      }
+    ]
+  }
 ]
