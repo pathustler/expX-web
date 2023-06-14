@@ -1,6 +1,6 @@
 import React from "react";
 import skillsData from "../../static/mockdata/skillStats.json";
-import '../../static/css/skillStats.css'
+import '../../static/css/skillstats.css'
 interface Skill {
   skillId: string;
   icon: string;
