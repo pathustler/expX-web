@@ -261,7 +261,12 @@ body {
 
 	width: 46px;
 }
-
+.calendar{
+	color:white
+}
+.fixedcontcal {
+	margin:auto
+}
 .day {
 	font-family: "Inter";
 	font-style: normal;
