@@ -3,7 +3,7 @@ import '@/app/lessons.css';
 
 const Informative = () => {
   return (
-    <div className="bg-gray-200 rounded-xl px-5 pt-5 w-4/6 max-h-4/5 overflow-auto">
+    <div className="bg-gray-100 rounded-xl px-5 pt-5 w-4/6 max-h-96 overflow-auto">
       <div className="p-4 h-4/5">
         <div className="h-full custom-scrollbar">
           <p className="text-gray-700">

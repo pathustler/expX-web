@@ -1,10 +1,10 @@
 import React from 'react';
 import '@/app/lessons.css';
 
-import Informative from './Informative';
-import Opening from './Opening';
-import Ending from './Ending';
-import VideoPage from './VideoPage';
+import Informative from './Informative'; //Done
+import Opening from './Opening'; //Done
+import Ending from './Ending'; //Done
+import VideoPage from './VideoPage'; //Done
 import Redirect from './Redirect';
 
 const PageContent = () => {

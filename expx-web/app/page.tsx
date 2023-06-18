@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-row items-center w-full h-screen">
-        <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar overflow-y-scroll noscrollbar">
+        <div className="w-auto bg-white h-full border-r-2 border-color-default sidebar overflow-y-scroll overflow-x-hidden noscrollbar">
           <Sidebar />
         </div>
         <div className="w-full bg-main flex flex-row  overflow-y-scroll justify-center border-r-2 border-color-default h-full ">
