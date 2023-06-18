@@ -9,7 +9,7 @@ import VideoPage from './VideoPage';
 const PageContent = () => {
   return (
     <div className="flex items-center justify-center h-full">
-      <VideoPage />
+      <Informative />
     </div>
   );
 };
