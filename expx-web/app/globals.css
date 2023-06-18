@@ -47,13 +47,14 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
 	gap: 10px;
-	margin: auto;
+	display: flex;
+	padding: 10px;
 	width: 3.5rem;
 	height: 3.5rem;
-	background: #0c5d8b;
+	margin: auto;
 	border-radius: 16px;
+	background: #0c5d8b;
 }
 
 body {
@@ -143,6 +144,12 @@ body {
 
 	padding: 0px;
 	gap: 3.25rem;
+}
+.calendar {
+	width: 20px;
+	height: 20px;
+
+	color: white;
 }
 .sidebar {
 	display: flex;
