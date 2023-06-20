@@ -16,6 +16,7 @@ const CalendarPage = () => {
       <div className="calendarArea">
           <CalendarComponent streaks={streaks} />
       </div>
+
       <div className="dataArea">
         <ScheduleData />
       </div>
