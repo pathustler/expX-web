@@ -17,7 +17,7 @@ interface Result {
 const PageContent: React.FC<Result> = ({ setResult }) => {
   return (
     <div className="flex items-center justify-center h-full">
-      <RestDay />
+      <VideoPage />
       {/* <Question result={setResult} /> */}
     </div>
   );
