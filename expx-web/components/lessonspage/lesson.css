@@ -30,6 +30,7 @@
 	background: #e5e5e5;
 	color: rgba(0, 0, 0, 0.2);
 }
+
 .next-button {
 	display: flex;
 	flex-direction: row;
@@ -40,6 +41,22 @@
 	background: #0c5d8b;
 
 	width: 125px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 15px;
+	color: white;
+}
+
+.wrong-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	background: #B81435;
+
+	width: 162.5px;
 	height: 50px;
 	font-size: 18px;
 	border-radius: 15px;
