@@ -43,7 +43,7 @@ const UserStats = (props:any, activeIndex:any) => {
                             alt="Solidus"
                             className="w-6 h-6"
                         />
-                        <span className="solidustext">2103</span>
+                        <span className="solidustext">{10}</span>
                     </button>
                     <button className="flex items-center space-x-2">
                         <FontAwesomeIcon icon={faBolt} className='h-5' style={{color: "#ffdb4c"}} />

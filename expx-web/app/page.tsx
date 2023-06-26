@@ -8,8 +8,24 @@ import DayGray from "@/components/homepage/dayscomponents/DayGray";
 import DayNormal from "@/components/homepage/dayscomponents/DayNormal";
 import DayPractice from "@/components/homepage/dayscomponents/DayPractice";
 import DayRest from "@/components/homepage/dayscomponents/DayRest";
+import useUser from '../lib/useUser'
 
 export default function Home() {
+  const username = "admin"
+  var [userdata, setUserdata] = useState("")
+
+  fetch('https://expx-backend.vercel.app/users/user/')
+  .then(response => response.json())
+  .then(data => {
+    setUserdata(data[0]) 
+    console.log(userdata)
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+
+
   return (
     <>
       <div className="flex flex-row items-center w-full h-screen">
@@ -35,7 +51,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col w-rightside gap-y-0.5 skill-info-gap bg-white  h-full">
           <div>
-            <UserStats activeIndex={1} />
+            <UserStats data={userdata} activeIndex={1} />
           </div>
           <SkillStats skillId="13579" />
         </div>

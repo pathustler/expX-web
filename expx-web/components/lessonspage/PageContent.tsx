@@ -20,8 +20,8 @@ const PageContent: React.FC<Result> = ({ setResult }) => {
     <div className="flex items-center justify-center h-full">
       
       {/* <Informative /> */}
-      <Image />
-      {/* <Opening /> */}
+      {/* <Image /> */}
+      <Opening />
       {/* <Ending /> */}
       {/* <VideoPage /> */}
       {/* <Redirect /> */}
