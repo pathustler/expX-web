@@ -1,0 +1,151 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.sidebardefmain,
+.sidebardefmain * {
+  box-sizing: border-box;
+}
+.sidebardefmain {
+  border-radius: 50px 0px 0px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 0px 3px 0px 0px;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 35vh;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.logocontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  margin-left: 3vh;
+}
+.logo-1 {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+}
+.group {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.exp-x {
+  text-align: left;
+  font: 700 25px/20px "Inter", sans-serif;
+  position: relative;
+}
+.exp-x-span {
+  color: #1e465c;
+  font: 700 25px/20px "Inter", sans-serif;
+}
+.exp-x-span2 {
+  color: #0085a9;
+  font: 700 25px/20px "Inter", sans-serif;
+}
+.itemwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+.item-active {
+  background: rgba(0, 199, 255, 0.2);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #00c7ff;
+  height: 67px;
+  border-width: 3px;
+  padding: 18px 25px 18px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item-active:hover{
+    background: rgba(0, 200, 255, 0.252);
+}
+.vectoractive{
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.active-item {
+  color: #00adff;
+  text-align: left;
+  font: 700 17px "Inter", sans-serif;
+  position: relative;
+  width: 183px;
+}
+.item {
+  background: rgba(255, 255, 255, 0.1);
+  height: 67px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  padding: 20px 25px 20px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item:hover{
+    background-color: #f8f8f8;
+}
+
+.vector {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.menu-item-text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font: 500 17px "Inter", sans-serif;
+  position: relative;
+  width: 183px;
+}
+
+.activesvg {
+    stroke: #00adff;
+
+}
+.svg {
+   stroke: #7f7f7f;
+    text-anchor: middle;
+    
+
+}
